@@ -1,0 +1,67 @@
+@media only screen and (max-width: 390px) {
+	#mainNav {
+		background-color:#0d1138;
+	}
+	.navbar-scrolled{
+		margin-top: 10px;
+	}
+	#warna{
+		position: absolute;
+		right: 26px;
+		top: 30px;
+	}
+	.font-metronom{
+		margin-top: 40%;
+	}
+	.vision{
+		margin-left: 0%;
+	}
+	.mission{
+		margin-left: 0%;
+	}
+	.section-title{
+		position: inherit !important;
+	}
+	.just-like {
+		width: 100% !important;
+	}
+	.segitiga-about {
+		width: 9%;
+	}
+	.segitiga-home{
+		width: 9%;
+	}
+	.clment{
+		padding-left: 70px;
+	}
+	header.masthead {
+		padding-top: 2rem;
+	}
+	.page-section {
+		padding: 3rem 0;
+	}
+	.vision img {
+		padding: 0 50px 0px 50px;
+	}
+	.mission img {
+		padding: 0 50px 0px 50px;
+	}
+	.border-left {
+		border-left: none !important;
+	}
+	.vertical-center{
+		min-height: 40vh;
+	}
+	.vertical-center img{
+		width: 6% !important;
+		height: 2% !important;
+		margin-top: 8px;
+	}
+	.title-metronom.text-center {
+		font-size: 30px;
+	}
+	.mapp{
+		width: 100%;
+		height: 100%;
+	}
+}

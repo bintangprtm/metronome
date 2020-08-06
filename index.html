@@ -1,0 +1,287 @@
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!DOCTYPE html>
+<html lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color">
+    <title>Metronom - Creative studio</title><!-- Behavioral Meta Data -->
+    <!-- Favicons -->
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                });
+            });
+        }
+    </script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Metronome">
+    <meta name="description" content="Metronome Web">
+    <meta name="theme-color" content="#2F3BA2" />
+    <link href="assets/favicon.png" rel="icon">
+    <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- Third party plugin CSS-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/aos-master/dist/aos.css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+    <link href="css/loader.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style-s.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="http://teamlostmemory.com/metronom/"><img src="assets/metronom-logo.png"></a>
+            <table cellpadding=8 style='border-collapse:collapse' data-aos="fade-left">
+                <tr>
+                    <td width='90%' align='center'>
+                        <div id="myDIV" style='display:none'>
+                            <ul class="clment navbar-nav ml-auto float-right">
+                                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#vision">Vission & Mission</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#client">Clients</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <a class="ml-5 toggler-navbar" id="warna">
+                <div class="hamburger-menu" onclick="myFunction()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myDIV");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
+            <!-- <li class="layer" data-depth="0.00">
+            </li> -->
+            <!-- BG -->
+            <li class="layer" data-depth="0.10">
+                <div class="background">
+                </div>
+            </li>
+            <!-- Hero -->
+            <li class="layer" data-depth="0.20">
+                <header class="masthead">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center justify-content-center ">
+                            <div class="col-lg-6"></div>
+                            <div class="col-lg-6 font-metronom" style="text-align: left;">
+                                <img class="segitiga-home" src="assets/img/segitiga.png" width="5%">
+                                <h1 class="text-white" style="font-family: BreeSerif-Regular;margin-bottom: 0.5rem;font-weight: 500;line-height: 1.2;">match<i class="ml-1 text-purple-metronom fas fa-circle" style="font-size: 9px"></i></h1>
+                                <h1 class="text-white" style="font-family: BreeSerif-Regular;;margin-bottom: 0.5rem;font-weight: 500;line-height: 1.2;">manifest<i class="ml-1 text-purple-metronom fas fa-circle" style="font-size: 9px"></i></h1>
+                                <h1 class="text-white" style="font-family: BreeSerif-Regular;;margin-bottom: 0.5rem;font-weight: 500;line-height: 1.2;">magnify<i class="ml-1 text-purple-metronom fas fa-circle" style="font-size: 9px"></i></h1>
+                                <br>
+                                <p class="text-purple-metronom font-weight-light mb-5">
+                                    <i class="mr-1 fab fa-instagram"></i>@metronomcreative.id
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- ================  About ==================== -->
+                <section class="bg-primary" id="about" style="padding-top: 7%;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <img class="segitiga-about" src="assets/img/segitiga.png" style="float: left;" width="3%"><br>
+                                <p class="text-purple-metronom" style="font-family: BreeSerif-Regular;font-size: 40px;float: left;">Metronom Creative Studio.</p>
+                                <p class="text-blue-metronom just-like" style='font-family: "robot_slab_light";color: #8CA1EA;width: 45%;font-size: 25px;text-align: left;'>Just like a metronome, we are a partner that matches the tempo of your business through immersive collaboration, thoughful planning, and fresh creative ideas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ================  End About ==================== -->
+
+                <!-- ================  Vision ==================== -->
+                <section class="bg-primary" id="vision" style="margin-left: -10%;">
+                    <div class="row">
+                        <div class="col-md-4 vision ml-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <img src="assets/img/lamp.png" alt="" width="100%" style="padding-top: 30px;" />
+                        </div>
+                        <div class="col">
+                            <div class="vertical-center">
+                                <div class="row pl-5">
+                                    <img class="mr-4" src="assets/img/segitiga-2.png" style="width: 3%;height: 2%;padding-top: 2%;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                    <p class="mr-4 h3 text-white" style="font-size: 40px;font-family: BreeSerif-Regular;padding-top: 1%;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">vision</p>
+                                    <div class="border-left text-white pr-5">
+                                        <p class="ml-4" style='font-family: "robot_slab_light";font-size: 23px;text-align: left;'>To be the leading and trustworthy agency that<br>provides services for campaigns and events.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ================ End Vision ==================== -->
+
+                <!-- ================ Mission ==================== -->
+
+                <section class="bg-primary" id="mission" style="margin-left: -10%;">
+                    <div class="row">
+                        <div class="col-md-4 mission ml-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <img src="assets/img/star.png" alt="" width="100%" />
+                        </div>
+                        <div class="col">
+                            <div class="vertical-center">
+                                <div class="row pl-5">
+                                    <img class="mr-4 pt-4" src="assets/img/segitiga-2.png" style="width: 3%;height: 2%;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                    <p class="mr-4 h3 text-white pt-3" style="font-size: 40px;font-family: BreeSerif-Regular;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">mission</p>
+                                    <div class="border-left text-white pr-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                        <p class="ml-4" style="letter-spacing: 2px;text-align: left;">A company that answers your questions by<br> exploring our limitless creative ideas and is<br> solution-driven to provide all digital, ATL,<br>and BTL advertising content and materials</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ================ End Mission ==================== -->
+
+                <!-- ================ Services ==================== -->
+                <section class="bg-primary" id="services" style="padding-top: 6%;">
+                    <div class="container-fluid p-0">
+                        <h2 class="title-metronom text-center" style="font-family: BreeSerif-Regular;">Services</h2>
+                        <br>
+                        <div class="center slider" style="height: 460px">
+                            <div style="height: 460px;">
+                              <img src="assets/img/aas.png">
+                              <h4 class=" text-white text-center">Branding & Marketing Strategy</h4>
+                          </div>
+                          <div style="height: 460px;">
+                              <img src="assets/img/2.png">
+                              <h4 class="text-white text-center">Social Media Management</h4>
+                              <p class="keterangan-services text-blue-metronom text-center">Digital Strategy,</p>
+                              <p class="keterangan-services text-blue-metronom text-center">Communication Pillar & Content Plan,</p>
+                              <p class="keterangan-services text-blue-metronom text-center">Creative Production,</p>
+                              <p class="keterangan-services text-blue-metronom text-center">Social Media Monitoring</p>
+                          </div>
+                          <div style="height: 460px;">
+                              <img src="assets/img/123.png">
+                              <h4 class="text-white text-center">Video Production</h4>
+                              <p class="keterangan-services text-blue-metronom text-center">Creative Concept,</p>
+                              <p class="keterangan-services text-blue-metronom text-center">Storyline & Storyboard,</p>
+                              <p class="keterangan-services text-blue-metronom text-center">Creative Production</p>
+                          </div>
+                          <div style="height: 460px;">
+                              <img src="assets/img/asda.png">
+                              <h4 class="text-white text-center">Photoshoot</h4>
+                              <p class="keterangan-services text-blue-metronom text-center">Moodboard Concept,</p>
+                              <p class="keterangan-services text-blue-metronom text-center">Creative Production</p>
+                          </div>
+                          <div style="height: 460px;">
+                              <img src="assets/img/5.png">
+                              <h4 class="text-white text-center">Creative concept</h4>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <!-- ================ End Services ==================== -->
+
+              <!-- ================ client ==================== -->
+              <section class="bg-primary" id="client" style="padding-top: 14%;">
+                <div class="container-fluid p-0">
+                    <h2 class="title-metronom text-center mb-5" style="font-family: BreeSerif-Regular;">clients</h2>
+                    <br>
+                    <div class="container">
+                        <div class="single-item">
+                            <div><img height="100px" src="assets/client/bahana-logo.png" style="transform: scale(0.5);"></div>
+                            <div><img height="100px" src="assets/client/tokopedia-logo.png" style="transform: scale(0.5);"></div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </section>
+            <!-- ================ End Client ==================== -->
+
+            <!-- ================ Contact ==================== -->
+            <section class="" id="contact" style="padding-top: 10%">
+                <div class="container-fluid p-0">
+                    <h2 class="title-metronom text-center mb-5" style="font-family: BreeSerif-Regular;">contact</h2>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <iframe class="mapp" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.208594089089!2d106.80952931432344!3d-6.236212995485839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f15dd9e57623%3A0xf1ac633d1a0f5812!2sJl.%20Ciniru%20II%20No.9%2C%20RT.6%2FRW.3%2C%20Rw.%20Bar.%2C%20Kec.%20Kby.%20Baru%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012180!5e0!3m2!1sen!2sid!4v1585232693301!5m2!1sen!2sid" width="90%" height="450" frameborder="0" style="" allowfullscreen="" aria-hidden="false" tabindex="0">
+                                </iframe>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="mapp-des section-title bottom-0" style="font-size: 20px;position: absolute;text-align: left;">
+                                    <h2 class="text-white font-weight-bold" style="font-size: 40px;">Let's</h2>
+                                    <h2 class="text-purple-metronom font-weight-bold" style="font-size: 40px;">Collaborate.</h2>
+                                    <p class="text-blue-metronom font-weight-bold">PT METRONOM KREATIF INDONESIA</p>
+                                    <p class="text-blue-metronom font-weight-bold">Jl. Ciniru II No.9 RT /6RT 3<br>Kby. Baru,Jakarta Selatan 12180</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ================ End Contact ==================== -->
+
+            <footer class=" py-5" id="footer-metronom">
+                <div class="container">
+                    <div class="small text-center text-muted">Copyright © 2020 - Metronom</div>
+                </div>
+            </footer>
+            <br>
+        </li>
+    </ul>
+</div>
+<!-- Javascript -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>    
+<script src="js/plugins.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="vendor/slick/slick/slick.js"></script>
+<script src="vendor/aos-master/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/scripts.js"></script>
+<script src="js/custom.js"></script>
+</body>
+
+</html>
+
+
+
+

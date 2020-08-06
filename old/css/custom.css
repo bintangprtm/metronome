@@ -1,0 +1,234 @@
+ body {      
+  overflow-x: hidden;
+}
+.clment a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 20px;
+  position: relative;
+}
+.clment a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.clment a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+/*slick-style*/
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 65%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+.slick-dots li button:before {
+    color: #6d7ec0;
+}
+.slick-dots li.slick-active button:before {
+    color:#eb008a !important;
+}
+/*slick-style-end*/
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 73vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.bottom-0{
+    bottom: 0;
+}
+
+
+.title-metronom {
+    color: #6d7ec0;
+    font-size: 80px;
+}
+.text-blue-metronom {
+    color: #6d7ec0;
+}
+.text-purple-metronom {
+    color: #eb008a;
+}
+@font-face {
+    font-family: robot_slab_light;
+    src: url(../vendor/roboto_slab/static/RobotoSlab-Light.tff);
+}
+@font-face {
+    font-family: robotoslab-bold;
+    src: url(../vendor/roboto_slab/static/RobotoSlab-Bold.ttf);
+}
+@font-face {
+    font-family: BreeSerif-Regular;
+    src: url(../font/BreeSerif-Regular.ttf);
+}
+
+
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #eb008a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.hamburger-menu span:nth-child(1) {
+    top: 2.5px;
+}
+
+.hamburger-menu span:nth-child(2) {
+    top: 11px;
+}
+
+.hamburger-menu span:nth-child(3) {
+    top: 21px;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+    top: 15px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+    top: 14px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+#about {
+    background: url("../assets/background-line.png");
+    background-position: 1.8% 44.9%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#vision {
+    background: url("../assets/background-line.png");
+    background-position: 0 54.9%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#mission {
+    background: url("../assets/background-line.png");
+    background-position: 10% 67.1%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#project {
+    background: url("../assets/background-line.png");
+    background-position: 2% 47.4%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#partners {
+    background: url("../assets/background-line.png");
+    background-position: 0% 61.2%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#contact {
+    background: url("../assets/background-line.png");
+    background-position: 0% 70.1%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#footer-metronom {
+    background: url("../assets/background-line.png");
+    background-position: 0% 98.8%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.vision{
+    margin-left: -9%;
+}
+.mission{
+    margin-left: -11%;
+}
+
+.flipster__item.flipster__item--current p{
+    display: block !important;
+}
+
+
+
